@@ -2,6 +2,7 @@ package oodrive.com.phd.RingSignature.SystemParameterGenerators;
 
 import it.unisa.dia.gas.jpbc.PairingParameters;
 import it.unisa.dia.gas.plaf.jpbc.pairing.a.TypeACurveGenerator;
+
 public class SystemParameterGenerator {
 	public PairingParameters pairingParams;
 
@@ -10,7 +11,7 @@ public class SystemParameterGenerator {
 	}
 	
 	public SystemParameterGenerator(){
-		TypeACurveGenerator generator = new TypeACurveGenerator(3, 517);
+		TypeACurveGenerator generator = new TypeACurveGenerator(160, 512);
 		this.pairingParams = generator.generate();
 	}
 	

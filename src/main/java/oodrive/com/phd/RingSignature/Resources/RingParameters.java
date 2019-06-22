@@ -1,5 +1,5 @@
 package oodrive.com.phd.RingSignature.Resources;
 
 public class RingParameters {
-	public static int RING_SIZE = 10;
+	public static int RING_SIZE = 1;
 }

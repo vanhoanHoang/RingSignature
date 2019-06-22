@@ -1,4 +1,4 @@
-package oodrive.com.phd.RingSignature;
+package oodrive.com.phd.RingSignature.Engine;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;

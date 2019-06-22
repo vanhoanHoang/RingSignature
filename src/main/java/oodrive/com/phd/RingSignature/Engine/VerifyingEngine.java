@@ -1,4 +1,4 @@
-package oodrive.com.phd.RingSignature;
+package oodrive.com.phd.RingSignature.Engine;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -31,7 +31,7 @@ public class VerifyingEngine {
 
 		Element R = systemParams.getPairing().getG1().newRandomElement();
 		R.sub(R);
-
+		
 		for (int i = 1; i <= RingParameters.RING_SIZE; i++) {
 			Element Ri = systemParams.getPairing().getG1().newElement();
 			Element yi = systemParams.getPairing().getG1().newElement();
@@ -46,7 +46,7 @@ public class VerifyingEngine {
 			R.mul(yi);
 		}
 		R.sub(g_delta);
-
+		
 		isValidated = R.isZero();
 		return isValidated;
 	}

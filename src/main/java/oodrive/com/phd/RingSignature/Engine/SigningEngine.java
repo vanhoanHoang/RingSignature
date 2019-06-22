@@ -1,10 +1,11 @@
-package oodrive.com.phd.RingSignature;
+package oodrive.com.phd.RingSignature.Engine;
 
 import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
 import java.util.HashMap;
 
 import it.unisa.dia.gas.jpbc.Element;
+
 import oodrive.com.phd.RingSignature.Parameters.PrivateKeyParameters;
 import oodrive.com.phd.RingSignature.Parameters.SignatureParameters;
 import oodrive.com.phd.RingSignature.Parameters.SystemParameters;
